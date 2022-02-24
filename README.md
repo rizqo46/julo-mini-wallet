@@ -16,6 +16,11 @@ python3 api/migrate.py
 python3 api/run.py
 ```
 
+To run the server only, just run:
+```
+python3 api/run.py
+```
+
 If you want to run in port 80, please make sure there are no other service running in the same port. Default port by app is 80.
 
 If you want to setup ```.env``` you can make make it and copy values from ```env.example```. But it's not necessary since default value is provided in the app.
