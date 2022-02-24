@@ -10,3 +10,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 from model import db 
 db.init_app(app)
+
+from controller import wallet_blueprint, init_blueprint
+app.register_blueprint(init_blueprint)
+app.register_blueprint(wallet_blueprint)
