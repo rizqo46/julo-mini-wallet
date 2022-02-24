@@ -188,7 +188,7 @@ def withdrawal():
 
     wallet_history = wallet_history.parse_to_dict(wallet.owned_by)
 
-    return jsonify(create_response("success", {"deposit": wallet_history}))
+    return jsonify(create_response("success", {"withdrawal": wallet_history}))
 
 @wallet_blueprint.route('', methods=["PATCH"])
 def disable():
